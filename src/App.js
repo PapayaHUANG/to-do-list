@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { useState } from 'react';
+import Form from './Form/Form';
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header className="header">
+        <ul className="header-container">
+          <li>
+            <i className="fas fa-bars" onClick={() => setIsOpen(!isOpen)}></i>
+          </li>
+          <li>To-do List</li>
+        </ul>
       </header>
-    </div>
+      {isOpen && <Form></Form>}
+    </>
   );
 }
 

@@ -1,0 +1,58 @@
+.item-container {
+  background-color: white;
+  margin-bottom: 2rem;
+  padding: 3rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  color: #908ea3;
+  position: relative;
+}
+
+.item {
+  padding: 0.2rem;
+}
+
+.check {
+  float: left;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.delete {
+  float: right;
+  cursor: pointer;
+}
+
+.new-task-btn {
+  position: absolute;
+  left: 35%;
+  bottom: -10%;
+  background-color: #a69df5;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+}
+
+.form {
+  background-color: white;
+  padding: 1rem;
+}
+
+.btn {
+  float: right;
+  background-color: #a69df5;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#item {
+  border-style: inherit;
+  border-radius: 5px;
+  font-family: inherit;
+}
